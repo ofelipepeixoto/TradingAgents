@@ -1,0 +1,13 @@
+{
+  "topic": "EXEMPLO FICTÍCIO — expansão de infraestrutura da Aurora",
+  "is_demo": true,
+  "sources": [
+    {
+      "id": "F1",
+      "title": "Comunicado fictício",
+      "url": "https://example.org/aurora",
+      "published_at": "2026-09-29",
+      "excerpt": "EXEMPLO FICTÍCIO: a empresa estuda ampliar capacidade, sem orçamento ou contratos divulgados."
+    }
+  ]
+}

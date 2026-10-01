@@ -1,0 +1,7 @@
+{
+  "model": "REPLACE_MODEL",
+  "input_usd_per_million": null,
+  "output_usd_per_million": null,
+  "verified_at": "REPLACE_DATE",
+  "source_url": "https://openai.com/api/pricing/"
+}

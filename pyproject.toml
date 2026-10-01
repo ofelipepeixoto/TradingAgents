@@ -41,12 +41,14 @@ bedrock = [
 
 [project.scripts]
 tradingagents = "cli.main:app"
+# Modified by ofelipepeixoto: isolated Radar lab command and package below.
+radar-teses = "radar_lab.__main__:main"
 
 [tool.setuptools.dynamic]
 version = {attr = "tradingagents.__version__"}
 
 [tool.setuptools.packages.find]
-include = ["tradingagents*", "cli*"]
+include = ["tradingagents*", "cli*", "radar_lab*"]
 
 [tool.setuptools.package-data]
 cli = ["static/*"]

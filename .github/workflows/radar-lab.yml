@@ -1,0 +1,28 @@
+name: Radar laboratory
+
+on:
+  push:
+    branches: [main, 'radar/**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-contracts:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install 'pytest==9.1.1' 'ruff==0.16.9'
+      - name: Offline contracts (no credentials or external services)
+        run: python -m pytest -q -c /dev/null lab_tests
+      - name: Lab lint
+        run: python -m ruff check radar_lab lab_tests
+      - name: Demo without upstream dependencies
+        run: python -m radar_lab --data-dir "$RUNNER_TEMP/radar-lab" demo
