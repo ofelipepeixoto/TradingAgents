@@ -1,3 +1,18 @@
+<!-- Modified by the ofelipepeixoto fork: added the isolated Radar laboratory entry point. -->
+
+## Radar de Teses e Riscos — laboratório do fork
+
+Versão local em português, com evidências fornecidas pelo operador, limites de custo
+e aprovação humana vinculada ao hash do relatório. Comece com `python -m radar_lab demo`:
+não precisa instalar dependências, configurar chave ou consumir API.
+
+Veja o [guia do laboratório](docs/radar-lab/README.md) e o
+[relatório fictício de exemplo](examples/radar-lab/demo-report.md).
+O laboratório usa um fluxo próprio e limitado; não executa o grafo completo TradingAgents,
+ordens ou publicações. A documentação original do projeto segue abaixo.
+
+---
+
 <p align="center">
   <img src="assets/TauricResearch.png" style="width: 60%; height: auto;">
 </p>
